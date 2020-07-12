@@ -11,9 +11,10 @@ function findAllPermutations(string)
    {
      let char = string[i]
      let remainingChars = string.slice(0, i) + string.slice(i + 1)
-     for(let permutation of findAllPermutations(remainingChars))
+     let permutation = findAllPermutations(remainingChars)
+     for(let j = 0; j < permutation.length; j++)
      {
-       permutationArr.push(char + permutation)
+       permutationArr.push(char + permutation[j])
      }
    }
    
