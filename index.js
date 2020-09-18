@@ -18,8 +18,8 @@ function findAllPermutations(str){
   }
   return target;
 
-  // current row combos: (# of combos starting with same character) * (length of string)
-  // next row combos: (current row combos) * (length of string)
+  // current row combos: (# of combos starting with same character) * (current row length of string)
+  // next row combos: (current row combos) * (current row length of string + 1)
 
   // 1: 1 * 1 1
   // 2: 1 * 2 12, 21
