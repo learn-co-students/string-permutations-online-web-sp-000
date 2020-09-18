@@ -1,3 +1,5 @@
+
+
 describe('#findAllPermutations', function() {
 	it('returns all permutations of a string of length 1', function(){
 		let str = 'a'
