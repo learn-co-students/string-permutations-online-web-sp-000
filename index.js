@@ -18,7 +18,7 @@ function findAllPermutations(str){
   }
   return target;
 
-  // (# of combos w/ leading number) * (# of leading numbers)
+  // (# of combos starting with same character) * (length of string)
   // next row: prev row multiple, number of characters
 
   // 1: 1 * 1 1
@@ -26,16 +26,5 @@ function findAllPermutations(str){
   // 3: 2 * 3 123, 132, 2
   // 4: 6 * 4 1234, 1243, 1324, 1342, 1423, 1432, 2
   // 5: 24 * 5 12345, 12354, 12435, 12453, 12534, 12543, 13, 14, 15, 2
-                                                  // 6, 6,  6,  6
-}
-
-function doIt(str){
-  let i = 1;
-  let prev = 1;
-  for (let char of str){
-    const combos = i * prev;
-    console.log('combos', combos, 'i', i);
-    prev = combos;
-    i++;
-  }
+                                                  // 6,   6,  6,  6
 }

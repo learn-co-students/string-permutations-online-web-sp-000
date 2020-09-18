@@ -17,19 +17,19 @@ describe('#findAllPermutations', function() {
 		expect(returnArray).toContain('cab')
 		expect(returnArray).toContain('cba')
 	})
-	// 
-	// it('returns all permutations of a string of length 4', function(){
-	// 	let str = 'abcd'
-	// 	let returnArray = findAllPermutations(str)
-	// 	console.log('returnArray', returnArray);
-	// 	expect(returnArray.length).toEqual(24)
-	// 	})
-	//
-	// it('returns all permutations of a string of length 8', function(){
-	// 	let str = 'abcdefgh'
-	// 	let returnArray = findAllPermutations(str)
-	// 	console.log('returnArray', returnArray);
-	// 	expect(returnArray.length).toEqual(40320)
-	// 	})
+
+	it('returns all permutations of a string of length 4', function(){
+		let str = 'abcd'
+		let returnArray = findAllPermutations(str)
+		console.log('returnArray', returnArray);
+		expect(returnArray.length).toEqual(24)
+		})
+
+	it('returns all permutations of a string of length 8', function(){
+		let str = 'abcdefgh'
+		let returnArray = findAllPermutations(str)
+		console.log('returnArray', returnArray);
+		expect(returnArray.length).toEqual(40320)
+		})
 
 });
